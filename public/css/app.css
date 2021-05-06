@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Teko', sans-serif;
+    color: #444444
+}
+
+.container{
+    width: 100%;
+}
+.container-wrapped{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/* HEADER______________ */
+header{
+    text-align: center;
+}
+header ul li {
+    display: inline;
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: lighter;
+}
+header a{
+    text-decoration: none;
+    color:inherit
+}
+
+
+/* PRODOTTI___________ */
+.container_pasta_list {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pasta-card{
+    width: 33.33%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.pasta-card img{
+    max-width: 100%;
+}
+
+.pasta-card:hover .pasta-card img{
+    transform: scale(1.2);
+}

@@ -3,5 +3,11 @@
 @section('title_page','Prodotti')
 
 @section('content')
-    <p> sono la pagina prodotti</p>
+    <div class="container container_pasta_list flex">
+        @foreach ($pasta_list as $pasta)
+            <div class="pasta-card">
+                <img src="{{$pasta['src']}}" alt="">
+            </div>
+        @endforeach
+    </div>
 @endsection
